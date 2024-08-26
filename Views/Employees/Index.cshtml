@@ -1,0 +1,47 @@
+﻿@model List<Employee> //هاد بساعدني بالاختصار في الكتابة , وين ما اعمل دوت بجيني الخصائص والاتربيوت الي اله
+@{
+    ViewData["Title"] = "Index";
+}
+
+<a href="/Employees/Create" class="btn btn-outline-success"> New </a>
+<h1>All Employees</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+            <td>Email</td>
+            <td>Password</td>
+        </tr>
+    </thead>
+
+    <tbody>
+        @foreach(var item in Model) @* Model : ثابتة دائما *@
+        {  
+            <tr>
+                <td>@item.Id</td>
+                <td>@item.Name</td>
+                <td>@item.Email</td>
+                <td>@item.Password</td>
+            </tr>
+            
+        }
+        
+
+        <!-- here's the data in DB we're looping in foreach
+        <tr>
+            <td>1</td>
+            <td>Amjad</td>
+            <td>amjad@gmail.com</td>
+            <td>123</td>
+        </tr>
+        
+        <tr>
+            <td>2</td>
+            <td>Tariq</td>
+            <td>tariq@gmail.com</td>
+            <td>123</td>
+		</tr>
+        -->
+    </tbody>
+</table>

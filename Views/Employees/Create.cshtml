@@ -1,0 +1,21 @@
+﻿
+
+<h1>Create Employee</h1>
+
+<form asp-controller="Employees" asp-action="Create">
+	<!-- Employees الي اسمه Controller الموجود في  Store الي اسمه Action  بحولني مباشرة على ال -->
+	<div class="my-3">
+		<label>Name</label>
+		<input type="text" class="form-control" name="Name" /> <!--بعطي النيم عشان يجيب الفاليو الي اله  --> <!-- عشان احط قيمة ابتدائية : value ممكن احط -->
+	</div>
+	<div class="my-3">
+		<label>Email</label>
+		<input type="text" class="form-control" name="Email" /> <!-- نفس الاسم الي موجود فيه بالداتا بيس تماما name لازم يكون  --> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+	</div>
+	<div class="my-3">
+		<label>Password</label>
+		<input type="text" class="form-control" name="Password" /> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+	</div>
+
+	<button type="submit" class="btn btn-outline-primary">Add</button>
+</form>
