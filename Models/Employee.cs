@@ -8,6 +8,7 @@ namespace CRUD.Models
         [DataType("varchar")]
         [MaxLength(50)]
         [Required]
+        [Display(Name="Emp Name")] // Name بدل Emp Name بعرضلي اياها اسمها server لما افتح ال 
         public string Name { get; set; } = null!;/*ملاحظة : هي بكل الحالات ريكوايرد من سي شارب ستة واطلع , لكن هاي معناها انو بس بالسي شارب منقله تخفش رح يكون الها قيمة , اما في الداتا بيس عالاكيد في حتى بدونها*/
         [DataType("varchar")]   //or : [DataType(DataType.EmailAddress)]
         [MaxLength(50)]

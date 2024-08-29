@@ -1,4 +1,7 @@
-﻿@model List<Employee> //هاد بساعدني بالاختصار في الكتابة , وين ما اعمل دوت بجيني الخصائص والاتربيوت الي اله
+﻿@*@model List<Employee>*@ <!--هاد بساعدني بالاختصار في الكتابة , وين ما اعمل دوت بجيني الخصائص والاتربيوت الي اله-->
+
+@model IEnumerable<Employee> // use in Razor page frequently , this is the difference between it and List
+
 @{
     ViewData["Title"] = "Index";
 }
@@ -8,10 +11,19 @@
 <table class="table">
     <thead>
         <tr>
+            <td>@Html.DisplayNameFor(emp=>emp.Id)</td>
+            <td>@Html.DisplayNameFor(emp => emp.Name)</td> <!-- هناك Display لل  Data Annotaion وبتشوف اذا انا عامل  Name على خاصية  Employee بتروح على كلاس -->
+            <td>@Html.DisplayNameFor(emp => emp.Email)</td>
+            <td>@Html.DisplayNameFor(emp => emp.Password)</td>
+            <td>Action</td>
+            
+            <!-- OR :
             <td>Id</td>
             <td>Name</td>
             <td>Email</td>
             <td>Password</td>
+			<td>Action</td>
+            -->
         </tr>
     </thead>
 
@@ -23,6 +35,14 @@
                 <td>@item.Name</td>
                 <td>@item.Email</td>
                 <td>@item.Password</td>
+                <td>
+                    <a asp-controller="Employees" asp-action="Delete" asp-route-id="@item.Id">Delete</a> <!-- asp-route-soso => في الاندكس لازم يكون الباراميتر سوسو كمان -->
+				     <!-- OR:  <td><a href="/Employees/Delete/at item.Id">Delete</a></td>-->
+				    <a asp-controller="Employees" asp-action="Edit" asp-route-id="@item.Id">Edit</a>
+
+                    <!-- (مش رح نشتغل فيها) HTML Helper =>  @*@Html.ActionLink("Employee","Edit",class="btn btn-primary");*@-->
+                </td>
+
             </tr>
             
         }

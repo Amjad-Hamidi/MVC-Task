@@ -1,0 +1,24 @@
+﻿@model Employee //هون بس بدي اعدل عواحد مش ليست
+
+<h1>Edit Employee</h1>
+
+<form asp-controller="Employees" asp-action="Update">
+	<!-- Employees الي اسمه Controller الموجود في  Store الي اسمه Action  بحولني مباشرة على ال -->
+	<div class="my-3">
+		<label>Name</label>
+		<input type="text" class="form-control" name="Name" value="@Model.Name" /> <!--بعطي النيم عشان يجيب الفاليو الي اله  --> <!-- عشان احط قيمة ابتدائية : value ممكن احط -->
+	</div>
+
+	<input type="hidden" class="form-control" name="Id" value="@Model.Id" />
+	
+	<div class="my-3">
+		<label>Email</label>
+		<input type="text" class="form-control" name="Email" value="@Model.Email" /> <!-- نفس الاسم الي موجود فيه بالداتا بيس تماما name لازم يكون  --> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+	</div>
+	<div class="my-3">
+		<label>Password</label>
+		<input type="text" class="form-control" name="Password" value="@Model.Password" /> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+	</div>
+
+	<button type="submit" class="btn btn-outline-primary"> Update </button>
+</form>

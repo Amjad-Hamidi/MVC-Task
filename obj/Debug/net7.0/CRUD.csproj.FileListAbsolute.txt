@@ -67,7 +67,6 @@ C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\staticwebassets.
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\scopedcss\bundle\CRUD.styles.css
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\scopedcss\projectbundle\CRUD.bundle.scp.css
-C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\CRUD.csproj.CopyComplete
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\CRUD.dll
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\refint\CRUD.dll
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\CRUD.pdb
@@ -251,3 +250,5 @@ C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\bin\Debug\net7.0\ru\Microsoft.Cod
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\bin\Debug\net7.0\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\bin\Debug\net7.0\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
 C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\bin\Debug\net7.0\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\CRUD.sourcelink.json
+C:\Users\mas\Desktop\ASP.NET\MVC\Session3\CRUD\obj\Debug\net7.0\CRUD.csproj.Up2Date

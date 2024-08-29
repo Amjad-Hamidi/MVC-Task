@@ -1,20 +1,44 @@
-﻿
+﻿@model Employee
 
 <h1>Create Employee</h1>
 
 <form asp-controller="Employees" asp-action="Create">
 	<!-- Employees الي اسمه Controller الموجود في  Store الي اسمه Action  بحولني مباشرة على ال -->
 	<div class="my-3">
-		<label>Name</label>
-		<input type="text" class="form-control" name="Name" /> <!--بعطي النيم عشان يجيب الفاليو الي اله  --> <!-- عشان احط قيمة ابتدائية : value ممكن احط -->
+
+		<!--this is called : Tag Helper-->
+		<label asp-for="Name"></label>  <!-- Employee لازم يكون نفس اسم الخاصية للكلاس  asp-for الي جوا -->
+		<input asp-for="Name" class="form-control" />     <!-- الخصائص الي انا معطيهن لكل اتربيوت Employee من حاله بعطيه النوع تكست والماكس 50 , بوخذهن من كلاس  -->
+		
+		<!-- OR : -->
+		<!-- <label>Name</label> -->
+		<!-- <input type="text" class="form-control" name="Name" /> -->  <!--بعطي النيم عشان يجيب الفاليو الي اله  --> <!-- عشان احط قيمة ابتدائية : value ممكن احط -->
 	</div>
 	<div class="my-3">
+		<label asp-for="Email"></label> <!-- Employee لازم تكون نفس الاسم الاتربيوت الموجودة بكلاس  -->
+		<input asp-for="Email" class="form-control" />
+
+
+		<!-- OR : -->
+		<!--
 		<label>Email</label>
-		<input type="text" class="form-control" name="Email" /> <!-- نفس الاسم الي موجود فيه بالداتا بيس تماما name لازم يكون  --> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+		<input type="text" class="form-control" name="Email" /> 
+		-->  <!-- نفس الاسم الي موجود فيه بالداتا بيس تماما name لازم يكون  --> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+		
 	</div>
+
 	<div class="my-3">
+		<input asp-for="Password" class="form-control" />
+		<input asp-for="Password" class="form-control" />
+
+
+		<!-- OR : -->
+		<!--
 		<label>Password</label>
-		<input type="text" class="form-control" name="Password" /> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+		<input type="text" class="form-control" name="Password" />
+		--> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+			
+		
 	</div>
 
 	<button type="submit" class="btn btn-outline-primary">Add</button>
