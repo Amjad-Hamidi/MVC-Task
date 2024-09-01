@@ -70,7 +70,11 @@ namespace CRUD.Controllers
 			var employee = _context.Employees.Find(emp.Id);//id: is hidden => review form to notice that
 			employee.Name=emp.Name;
             employee.Email=emp.Email;
-			employee.Password=emp.Password;
+            if(emp.Password is not null)
+            {
+                employee.Password=emp.Password;
+            }
+			
 
             _context.SaveChanges();
             return RedirectToAction("Index");
@@ -84,7 +88,7 @@ namespace CRUD.Controllers
 
             _context.Remove(employee);
             _context.SaveChanges();
-            return RedirectToAction("Index"); // بتوديني عالاكشن الي اسمه اندكس , موجود هيو هون فوق 
+            return RedirectToAction(nameof(Index)); // بتوديني عالاكشن الي اسمه اندكس , موجود هيو هون فوق 
             //return Content($"{id}"); // بس اكبس على الاي دي الي رقمه 1 رح يرجعلي 1
         }
     }

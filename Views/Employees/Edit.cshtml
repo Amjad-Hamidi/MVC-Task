@@ -5,19 +5,20 @@
 <form asp-controller="Employees" asp-action="Update">
 	<!-- Employees الي اسمه Controller الموجود في  Store الي اسمه Action  بحولني مباشرة على ال -->
 	<div class="my-3">
-		<label>Name</label>
-		<input type="text" class="form-control" name="Name" value="@Model.Name" /> <!--بعطي النيم عشان يجيب الفاليو الي اله  --> <!-- عشان احط قيمة ابتدائية : value ممكن احط -->
+		<label asp-for="Name"></label>
+		<input asp-for="Name"  class="form-control"  /> <!--بعطي النيم عشان يجيب الفاليو الي اله  --> <!-- عشان احط قيمة ابتدائية : value ممكن احط -->
 	</div>
 
-	<input type="hidden" class="form-control" name="Id" value="@Model.Id" />
-	
+	<!--<input type="hidden" class="form-control" name="Id" value="@Model.Id" /> -->
+	@Html.HiddenFor(model=>model.Id)
+
 	<div class="my-3">
-		<label>Email</label>
-		<input type="text" class="form-control" name="Email" value="@Model.Email" /> <!-- نفس الاسم الي موجود فيه بالداتا بيس تماما name لازم يكون  --> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+		<label asp-for="Email"></label>
+		<input asp-for="Email" class="form-control"  /> <!-- نفس الاسم الي موجود فيه بالداتا بيس تماما name لازم يكون  --> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
 	</div>
 	<div class="my-3">
-		<label>Password</label>
-		<input type="text" class="form-control" name="Password" value="@Model.Password" /> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
+		<label asp-for="Password"></label>
+		<input asp-for="Password" class="form-control" /> <!-- الي اله value عشان يجيب ال  name بعطي ال -->
 	</div>
 
 	<button type="submit" class="btn btn-outline-primary"> Update </button>

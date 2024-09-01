@@ -1,0 +1,45 @@
+﻿@model IEnumerable<CRUD.Models.User>
+
+
+
+<h1>Inactive Users</h1>
+
+<div class="container mt-4">
+    <h2>User List</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>User Name</th>
+                <th>Password</th>
+                <th>Is Active</th>
+                <th>Created At</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model)
+            {
+                <tr>
+@*                     <td>@user.UserId</td>
+ *@                    <td>@user.UserName</td>
+                    <td>@user.Password</td>
+                    <td>@user.CreatedAt.ToString("yyyy-MM-dd HH:mm")</td>
+
+                    <td>@user.IsActive
+@*                         <butten class="btn btn-danger ">Be Active?</butten>
+ *@                    </td>
+                    <td>
+                        @if (!user.IsActive)
+                        {
+                            <form asp-action="ActivateUser" method="post">
+                                <input type="hidden" name="userId" value="@user.UserId" />
+                                <button type="submit" class="btn btn-danger">Be Active?</button>
+                            </form>
+                        }
+                      
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
