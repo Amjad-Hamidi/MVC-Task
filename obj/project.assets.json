@@ -11297,11 +11297,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mas\\Desktop\\ASP.NET\\MVC\\Session3\\CRUD\\CRUD.csproj",
+      "projectUniqueName": "C:\\Users\\mas\\Desktop\\ASP.NET\\MVC\\MVC-CRUD-Task\\CRUD\\CRUD.csproj",
       "projectName": "CRUD",
-      "projectPath": "C:\\Users\\mas\\Desktop\\ASP.NET\\MVC\\Session3\\CRUD\\CRUD.csproj",
+      "projectPath": "C:\\Users\\mas\\Desktop\\ASP.NET\\MVC\\MVC-CRUD-Task\\CRUD\\CRUD.csproj",
       "packagesPath": "C:\\Users\\mas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mas\\Desktop\\ASP.NET\\MVC\\Session3\\CRUD\\obj\\",
+      "outputPath": "C:\\Users\\mas\\Desktop\\ASP.NET\\MVC\\MVC-CRUD-Task\\CRUD\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mas\\AppData\\Roaming\\NuGet\\NuGet.Config",
